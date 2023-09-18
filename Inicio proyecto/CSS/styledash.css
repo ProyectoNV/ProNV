@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar,
+.nav{
+    width: 270px;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    background: #05bcc1 ;
+    left: 0;
+    z-index: 2;
+    top: 0;
+	transition: all .3s ease-in-out;
+    overflow-y: scroll;
+	overflow: hidden;
+}
+
+.nav{
+    position: relative;
+	height: 100%;
+	padding: 0 10px;
+	padding-bottom: 30px;
+}
+
+.sidebar ul li{
+    color: black(230, 230, 230, .9);
+    text-align: center;
+    padding: 5px 10px;
+    list-style: none;
+    border-bottom: 1px solid #E74C3C(100, 100, 100, .3);
+}
+
+.sideBar-title{
+    height: 50px;
+	line-height: 50px;
+	color: #101111;
+	font-size: 20px;
+    position: relative;
+	text-align: center;
+    margin: 0 auto;
+}
+
+.sideBar-UserInfo{
+    border-top: 4px solid #f95353;
+	border-bottom: 4px solid #f95353;
+	color: #080808;
+	font-size: 14px;
+	padding: 10px 0;
+	text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.sideBar-UserInfo figure img{
+    width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.sideBar-UserInfo p{
+    text-align: center;
+    margin: 5px 0;
+}
+
+.Barra-lateral_link{
+    color: black;
+    display: block;
+    margin:5px 0;
+    text-decoration: none;
+}
+
+.btn_img{
+    color: black;
+}
+
+.Barra-lateral_button:hover{
+    background-color: rgba(247, 243, 243, 0.2);
+}
+
+.Barra-lateral_link--inside{
+    border-left: 6px;
+    padding-left: 20px;
+}
+
+.Barra-lateral{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+}
+
+.Barra-lateral_item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.Barra-lateral_item-click{
+    cursor: pointer;
+}
+
+.Barra-lateral_button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .Barra-lateral_arrow{
+    transform: rotate(280deg);
+}
+
+.Barra-lateral_arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.Barra-lateral_show{
+    width: 80%;
+    border-left: solid transparent;
+    outline: none;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+
+.Barra-lateral_inside{
+    padding-left: 27px;
+}
+
+.Barra-lateral_link--inside:hover{
+	border-left: 3px solid #f95353;
+	color: #f95353;
+    left: 80px;
+}
+
+.conte-pagina{
+    font-size: 21px;
+    right: 0;
+	z-index: 1;
+	padding-left: 270px;
+}
+
+.Barra-nav,
+.Barra-nav > ul,
+.Barra-nav > ul >li,
+.Barra-nav > ul > li > a{
+	height: 50px;
+	line-height: 50px;
+}
+.Barra-nav > ul > li > a{
+	outline: none;
+}
+.Barra-nav{
+	background-color: #05bcc1;
+	overflow: hidden;
+}
+.Barra-nav > ul >li,
+.Barra-nav > ul > li > a{
+	display: inline-block;
+	width: 50px;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	transition: all .3s ease-in-out;
+	position: relative;
+}
+.Barra-nav > ul > li > a:hover{
+	background-color: rgba(255, 255, 255, .1);
+}
+
+.conte-pagina_move{
+    margin-left: -270px;
+}
+
+.sideBar_move{
+    left: -270px;
+}
+
+.info-text >h1{
+    margin-top: 20px;
+    padding: 20px 25px 10px 25px;
+    text-align: center;
+}
+
+.info-text >p{
+    margin: 0 50px 10px 25px;
+    text-align: justify;
+    font-size: 17px;
+    border-bottom: 1px solid #eee;
+}
+
+.caja-num{
+	max-width: 310px;
+	height: 200px;
+	background-color: #fff;
+	color: #fcb900;
+	position: relative;
+	display: inline-block;
+	box-shadow: 0 1px 7px rgba(0, 0, 0, .2);
+	cursor: pointer;
+	margin: 10px 65px 10px 25px;
+    border-left: 3px solid #8b0fff;
+    padding: 15px 15px 10px 9px;
+}
+
+.caja-entidad,
+.caja-icono,
+.caja-cantidad{
+    position: relative;
+}
+
+.caja-entidad{
+    height: 40px;
+	line-height: 40px;
+	font-size: 21px;
+	top: -10px;
+	left: 0;
+    text-align: center;
+}
+
+.caja-icono{
+    bottom: 0;
+    height: 140px;
+	width: 130px;
+}
+
+.caja-icono > img{
+    width: 117px;
+    height: 140px;
+    color: #fcb900;
+}
+
+.caja-cantidad{
+    background-color: #8b0fff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilo tarjetas dashboard Alumno*/
+.contenedor-tarjetas{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.contenedor-tarjetas .card{
+    width: 300px;
+    height: 320px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0,0, 0, 0.2);
+    overflow: hidden;
+    margin:5px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.contenedor-tarjetas .card a{
+    color: black;
+    outline: none;
+    text-decoration: none;
+}
+
+.conte-pagina .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 1) ;
+}
+
+.contenedor-tarjetas .card img{
+    width: 150px;
+    height: 180px;
+    border-radius: 25%;
+}
+
+.contenedor-tarjetas .card h4{
+    margin:5px 0 5px 0;
+    font-size: 1em;
+}
+
+.contenedor-tarjetas .card p{
+    font-size: 17px;
+}
+
+.opcion_block{
+    pointer-events: none;
+}

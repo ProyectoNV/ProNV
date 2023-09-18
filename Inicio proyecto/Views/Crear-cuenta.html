@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Pro NV/Inicio proyecto/CSS/style.css">
+    <title>Pre-Registro</title>
+</head>
+<body id="Registro">
+    <div class="Tittle-registro">
+        <h1>Pre-Registro</h1>
+    </div>
+    <form class="form-registro">
+        <fieldset class="estudiante">
+            <legend>Datos del estudiante</legend>
+            <div class="inputs">
+                <input type="text" placeholder="Ingrese su primer nombre" required>
+                <input type="text" placeholder="Ingrese su segundo nombre">
+                <input type="text" placeholder="Ingrese su primer apellido" required>
+                <input type="text" placeholder="Ingrese su segundo apellido">
+            
+                    <div class="Tipo-Documento">
+                        <select name="TiposIdentificacion">
+                            <option value="">Seleccione su tipo de documento</option>
+                            <option value="RC">RC</option>
+                            <option value="TI">TI</option>
+                            <option value="CC">CC</option>
+                            <option value="CE">CE</option>
+                            <option value="PEP">PEP</option>
+                        </select>
+                    </div>
+                <input type="email" placeholder="Ingrese su correo" required>
+                <input type="tel" placeholder="Ingrese su telefono" required>
+            </div>    
+        </fieldset> 
+        <fieldset class="acudiente">   
+            <legend>Datos de su acudiente</legend>
+            <div class="inputs">
+                <input type="text" placeholder="Ingrese nombre y apellido" required>
+                <input type="email" placeholder="Ingrese su correo"  required>
+                <input type="tel" placeholder="Ingrese su telefono" required>
+                <button type="submit">Enviar</button>
+            </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

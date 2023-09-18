@@ -1,0 +1,26 @@
+.color_card {
+    width: 300px;
+}
+
+.color_card img {
+    width: 200px;
+    height: auto;
+    padding-left: 20px;
+    margin-top: 60px;
+}
+
+.tamanno {
+    width: 700px;
+    margin-top: 50px;
+    margin-left: 20px;
+    background: #ffff;
+    border: solid 1px #dee2e6;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.boton .tamanno {
+    margin-top: 0px;
+    width: 920px;
+    margin-left: 40px;
+}

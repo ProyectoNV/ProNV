@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Inicio Administradores</title>
+    <link rel="stylesheet" href="../CSS/styledash.css">
+    <link rel="stylesheet" href="../CSS/tarjetas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+</head>
+<body>
+    <section  class="sidebar" id="sidebar">
+        <nav class="nav">
+            <div class="sideBar-title">
+                N.V Coordination
+            </div>
+            <div class="sideBar-UserInfo">
+                <figure class="sidebar-photo">
+                    <img src="../img/user.jpg" alt="Userphoto"><br>
+                    <p>User Name</p>
+                    <a href="../Views/Informacion_personal_admin.html" class="btn_img"><i class="fa-solid fa-user-pen" style="margin:10px 20px 0 0; font-size: 20px;"></i></a>
+                    <a href="../index.html" class="btn_img"><i class="fa-solid fa-right-from-bracket" style="margin:10px 20px 0 0; font-size: 20px;"></i></a>
+                </figure>
+            </div>
+            <ul class="Barra-lateral"> 
+                <li class="Barra-lateral_item">
+                    <div class="Barra-lateral_button">
+                        <img src="../boxcoins/bx-menu.svg" class="Barra-lateral_img">
+                        <a href="../Views/dashboardAdmin.html" class="Barra-lateral_link">Menu</a>
+                    </div>   
+                </li>
+                <li class="Barra-lateral_item Barra-lateral_item-click">
+                    <div class="Barra-lateral_button Barra-lateral_button--click">
+                        <img src="../boxcoins/bxs-registered.svg" class="Barra-lateral_img">
+                        <a href="#!" class="Barra-lateral_link">Registros</a>
+                        <img src="../boxcoins/arrow.svg" class="Barra-lateral_arrow">
+                    </div>
+                    <ul class="Barra-lateral_show">
+                        <li class="Barra-lateral_inside">
+                            <a href="../Views/Registrar_alumno.html" class="Barra-lateral_link Barra-lateral_link--inside">Registro Alumno</a>
+                        </li>
+                        <li class="Barra-lateral_inside">
+                            <a href="../Views/Registrar_Docente.html" class="Barra-lateral_link Barra-lateral_link--inside">Registro Docente</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="Barra-lateral_item Barra-lateral_item-click">
+                    <div class="Barra-lateral_button Barra-lateral_button--click">
+                        <img src="../boxcoins/bxs-extension.svg" class="Barra-lateral_img">
+                        <a href="#!" class="Barra-lateral_link">Actividades</a>
+                        <img src="../boxcoins/arrow.svg" class="Barra-lateral_arrow">
+                    </div>
+                    <ul class="Barra-lateral_show">
+                        <li class="Barra-lateral_inside">
+                            <a href="../Views/Agregar_actividad.html" class="Barra-lateral_link Barra-lateral_link--inside">Agregar</a>
+                        </li>
+                        <li class="Barra-lateral_inside">
+                            <a href="../Views/Eliminar_actividad.html" class="Barra-lateral_link Barra-lateral_link--inside">Eliminar</a>
+                        </li>
+                        <li class="Barra-lateral_inside">
+                            <a href="../Views/Ver_listas.html" class="Barra-lateral_link Barra-lateral_link--inside">Listas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="Barra-lateral_item Barra-lateral_item-click">
+                    <div class="Barra-lateral_button Barra-lateral_button--click">
+                        <img src="../boxcoins/bxs-calendar.svg" class="Barra-lateral_img">
+                        <a href="#!" class="Barra-lateral_link">Horario</a>
+                        <img src="../boxcoins/arrow.svg" class="Barra-lateral_arrow">
+                    </div>
+                    <ul class="Barra-lateral_show">
+                        <li class="Barra-lateral_inside">
+                            <a href="../Views/Hacer cronogrmas.html" class="Barra-lateral_link Barra-lateral_link--inside">Hacer cronograma</a>
+                        </li>
+                        <li class="Barra-lateral_inside">
+                            <a href="../Views/Ver_horario.html" class="Barra-lateral_link Barra-lateral_link--inside">Ver horario</a>
+                        </li>
+                    </ul>
+                </li> 
+                <li class="Barra-lateral_item">
+                    <div class="Barra-lateral_button">
+                        <img src="../boxcoins/bxs-data.svg" class="Barra-lateral_img">
+                        <a href="../Views/Historial_de_Usuario.html" class="Barra-lateral_link">Historial de Usuario</a>
+                    </div>   
+                </li>
+                <li class="Barra-lateral_item">
+                    <div class="Barra-lateral_button">
+                        <img src="../boxcoins/bxs-report.svg" class="Barra-lateral_img">
+                        <a href="../Views/Enviar_Reportes.html" class="Barra-lateral_link">Reportes</a>
+                    </div>   
+                </li>
+            </ul>
+        </nav>   
+    </section>
+    <section class="conte-pagina" id="conte-pagina">
+        <nav class="Barra-nav">
+            <ul>
+                <li>
+                    <a href="#!" class="toggle-btn" id="btn_open"><img src="../boxcoins/bx-menu.svg"></a>
+                </li>
+            </ul>
+        </nav> 
+        <div class="info-text">
+            <h1>Eliminar Actividades</h1><br>
+        <div class="container">
+            <div class="card">
+                <figure>
+                    <img src="../img/jugador-de-futbol.png">
+                </figure>
+                <div class="contenido">
+                    <h3>Futbol pequeños</h3>
+                    <p>El triunfo no esta en vencer siempre, sino en nunca desanimarse. </p>
+                    <a href="../Views/Listado.html">Ver lista</a>
+                </div>
+            </div>
+            <div class="card_d">
+                <figure>
+                    <img src="../img/jugadores-de-futbol.png">
+                </figure>
+                <div class="contenido">
+                    <h3>Futbol grandes</h3>
+                    <p> Ningun jugador es tan bueno como todos juntos.</p>
+                    <a href="../Views/Listado.html">Ver lista</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="../img/musica-romantica.png">
+                </figure>
+                <div class="contenido">
+                    <h3>Musica pequeños</h3>
+                    <p>La musica es el arte mas directo.</p>
+                    <a href="../Views/Listado.html">Ver lista</a>
+                </div>
+            </div>
+            <div class="card_d">
+                <figure>
+                    <img src="../img/musica-romantica.png">
+                </figure>
+                <div class="contenido">
+                    <h3>Musica grandes</h3>
+                    <p>El mejor sonido para nuestros oidos es la musica.</p>
+                    <a href="../Views/Listado.html">Ver lista</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="../img/fotografia.png">
+                </figure>
+                <div class="contenido">
+                    <h3>Fotografia</h3>
+                    <p>La foto perfecta es aquella que capta momentos inolvidables. </p>
+                    <a href="../Views/Listado.html">Ver lista</a>
+                </div>
+            </div>
+            <div class="card_d">
+                <figure>
+                    <img src="../img/manicura.png">
+                </figure>
+                <div class="contenido">
+                    <h3>Manicure</h3>
+                    <p> Al mal tiempo uñas lindas. </p>
+                    <a href="../Views/Listado.html">Ver lista</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="../img/cepillo-para-tinte-de-cabello.png">
+                </figure>
+                <div class="contenido">
+                    <h3>Peinados</h3>
+                    <p>La vida es mas bonita cuando te haces un peinado.</p> 
+                    <a href="../Views/Listado.html">Ver lista</a>
+                </div>
+            </div>
+            <div class="card_d">
+                <figure>
+                    <img src="../img/natacion-sincronizada.png">
+                </figure>
+                <div class="contenido">
+                    <h3>Natacion</h3>
+                    <p>Lo que hunde tambien te puede enseñar a nadar.</p>
+                    <a href="../Views/Listado.html">Ver lista</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="../img/panadero.png">
+                </figure>
+                <div class="contenido">
+                    <h3>Panaderia</h3>
+                    <p>Para tu paladar un rico pan.</p>
+                    <a href="../Views/Listado.html">Ver lista</a>
+                </div>
+            </div>
+            <div class="card_d">
+                <figure>
+                    <img src="../img/fondo.png">
+                </figure>
+                <div class="contenido">
+                    <h3>Emprendimiento</h3>
+                    <p>Lo unico imposible es aquello que no intentas.</p>
+                    <a href="../Views/Listado.html">Ver lista</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../Js/main.js" charset="utf-8"></script>
+</body>
+</html>

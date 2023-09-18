@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asignacion de puntos y observaciones</title>
+  <link rel="stylesheet" href="../CSS/style_d.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+  <script src="https://kit.fontawesome.com/e6eef9bc73.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/Pro NV/Inicio proyecto/CSS/Registro.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+
+  <div class="barra_lateral">
+    <div class="menu_hamburguesa">
+      <div class="logo">
+        <h2>N.V Coordination</h2>
+
+        <img src="../img/user.jpg" class="rounded-circle" alt="Imagen perfil">
+        <h5>Docente</h5>
+
+      </div>
+      <div class="opcion">
+        <a href="../Views/dashboard_docente.html"><span class="material-symbols-outlined">
+            dashboard
+          </span> <span class="Diseño"> Menu</span></a>
+        <a href="../Views/Llenar asistencia.html"><span class="material-symbols-outlined">
+            checklist
+          </span>Registro de asistencia</a>
+        <a href="../Views/Asignar puntos y observaciones .html"><span class="material-symbols-outlined">
+            verified
+          </span>Asignar puntos y observaciones</a>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <section class="Contenido_pagina">
+
+    <nav class="navbar bg-body-tertiary color_nav">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" id="Menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+
+    <div class="contenido">
+      <section>
+        <h1>Gestione sus puntos y observaciones</h1>
+        <table class="table table-success table-striped" id="Registro">
+          <thead>
+            <tr>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th>Puntos</th>
+              <th>Observaciones</th>
+              <th>Fecha</th>
+            </tr>
+
+          </thead>
+          <tbody>
+            <tr>
+              <td>Andres Felipe</td>
+              <td>Castellanos</td>
+              <td><button type="button" id="Puntos" class="btn btn-outline-success" data-bs-toggle="modal"
+                  data-bs-target="#Puntuacion">8 <i class="fa-solid fa-ranking-star"></i></button>
+              </td>
+              <td> <button type="button" id="Observacion" class="btn btn-outline-success" data-bs-toggle="modal"
+                  data-bs-target="#Observaciones"><i class="fa-solid fa-file-circle-plus"></i> </button>
+              </td>
+              <td>
+                <input type="date" name="fecha_asistencia">
+              </td>
+            </tr>
+            <tr>
+              <td>Laura Sofia</td>
+              <td>Moreno Cruz</td>
+              <td><button type="button" id="Puntos" class="btn btn-outline-success" data-bs-toggle="modal"
+                  data-bs-target="#Puntuacion">5 <i class="fa-solid fa-ranking-star"></i></button></td>
+              <td><button type="button" id="Observacion" class="btn btn-outline-success" data-bs-toggle="modal"
+                  data-bs-target="#Observaciones"><i class="fa-solid fa-file-circle-plus"></i> </button> </td>
+              <td>
+                <input type="date" name="fecha_asistencia">
+              </td>
+            </tr>
+            <tr>
+              <td>Jaider</td>
+              <td>Lopez Contreras</td>
+              <td><button type="button" id="Puntos" class="btn btn-outline-success" data-bs-toggle="modal"
+                  data-bs-target="#Puntuacion">9 <i class="fa-solid fa-ranking-star"></i></button></td>
+              <td><button type="button" id="Observacion" class="btn btn-outline-success" data-bs-toggle="modal"
+                  data-bs-target="#Observaciones"><i class="fa-solid fa-file-circle-plus"></i> </button> </td>
+              <td>
+                <input type="date" name="fecha_asistencia">
+              </td>
+            </tr>
+            <tr>
+              <td>Maria Jose</td>
+              <td>Ardila Valencia</td>
+              <td><button type="button" id="Puntos" class="btn btn-outline-success" data-bs-toggle="modal"
+                  data-bs-target="#Puntuacion">7 <i class="fa-solid fa-ranking-star"></i></button></td>
+              <td> <button type="button" id="Observacion" class="btn btn-outline-success" data-bs-toggle="modal"
+                  data-bs-target="#Observaciones"><i class="fa-solid fa-file-circle-plus"></i> </button></td>
+              <td>
+                <input type="date" name="fecha_asistencia">
+              </td>
+            </tr>
+            <tr>
+              <td>Mateo Alejandro</td>
+              <td>Rodriguez Orozco </td>
+              <td><button type="button" id="Puntos" class="btn btn-outline-success" data-bs-toggle="modal"
+                  data-bs-target="#Puntuacion">8 <i class="fa-solid fa-ranking-star"></i></button></td>
+              <td><button type="button" id="Observacion" class="btn btn-outline-success" data-bs-toggle="modal"
+                  data-bs-target="#Observaciones"><i class="fa-solid fa-file-circle-plus"></i> </button></td>
+              <td>
+                <input type="date" name="fecha_asistencia">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+
+
+        <!-- Modal puntos -->
+        <div class="modal fade" id="Puntuacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Puntuación</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-floating mb-3">
+                  <input type="number" class="form-control" id="floatingInput" placeholder="1">
+                  <label for="floatingInput">¿Cuantos puntos desea ingresar? </label>
+                </div>
+              </div>
+              <div class="modal-footer">
+
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+
+    <!-- Modal observaciones -->
+    <div class="modal fade" id="Observaciones" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Observaciones</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h4>Observaciones registradas</h4>
+            <p>El estudiante el dia 28 de Junio a las 3:00 pm llego tarde, siendo la hora de entrada a las 2:00pm</p>
+            <h4>¿Desea agregar más observaciones?</h4>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Añade tu observacíon</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  </div>
+
+  </section>
+
+
+
+
+  <!-- Referencias tippy js: Libreria de javascript para ventanas emergentes-->
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@5"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+  <script src="../Js/Registro.js"></script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+</body>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Mis actividades</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/styledash.css">
+    <link rel="stylesheet" href="../CSS/actividadesAlum.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <section  class="sidebar" id="sidebar">
+        <nav class="nav">
+            <div class="sideBar-title">
+                N.V Coordination
+            </div>
+            <div class="sideBar-UserInfo">
+                <figure class="sidebar-photo">
+                    <img src="../img/user.jpg" alt="Userphoto">
+                    <p>User Name</p>
+                    <a href="../Views/Información_personal_Alum.html" class="btn_img"><i class="fa-solid fa-user-pen" style="margin:10px 20px 0 0; font-size: 20px;"></i></a>
+                    <a href="../index.html" class="btn_img"><i class="fa-solid fa-right-from-bracket" style="margin:10px 20px 0 0; font-size: 20px;"></i></a>
+                </figure>
+            </div>
+            <ul class="Barra-lateral"> 
+                <li class="Barra-lateral_item">
+                    <div class="Barra-lateral_button">
+                        <a href="../Views/dashboardAlumn.html" class="Barra-lateral_link">
+                            <i class="fa-solid fa-house"></i>
+                            Menu</a>
+                    </div>   
+                </li>
+                <li class="Barra-lateral_item">
+                    <div class="Barra-lateral_button">
+                        <a href="../Views/ver_horario_alum.html" class="Barra-lateral_link">
+                            <i class="fa-solid fa-calendar"></i>
+                            Ver Horario
+                        </a>
+                    </div>   
+                </li>
+                <li class="Barra-lateral_item">
+                    <div class="Barra-lateral_button">
+                        <a href="../Views/actividadesAlum.html" class="Barra-lateral_link">
+                            <i class="fa-solid fa-book-open"></i>
+                            Mis Actividades
+                        </a>
+                    </div>   
+                </li>
+                <li class="Barra-lateral_item">
+                    <div class="Barra-lateral_button">
+                        <a href="../Views/Inscripción.html" class="Barra-lateral_link">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            Inscripciones
+                        </a>
+                    </div>   
+                </li>
+                <li class="Barra-lateral_item">
+                    <div class="Barra-lateral_button">
+                        <a href="../Views/reportes-alumno.html" class="Barra-lateral_link">
+                            <i class="fa-sharp fa-solid fa-file"></i>
+                            Reportes
+                        </a>
+                    </div>   
+                </li>
+            </ul>            
+        </nav>   
+    </section>
+    <section class="conte-pagina" id="conte-pagina">
+        <nav class="Barra-nav">
+            <ul>
+                <li>
+                    <a href="#!" class="toggle-btn" id="btn_open"><img src="/boxcoins/bx-menu.svg"></a>
+                </li>
+            </ul>
+        </nav> 
+		<div class="info-text">
+			<h1>Mis actividades</h1>
+		</div>
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                  <th>N°</th>
+                  <th>Nombre Actividad</th>
+                  <th>Profesor</th>
+                  <th>Jornada</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Fotografia</td>
+                    <td>Andres</td>
+                    <td>Tarde</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Futbol Grandes</td>
+                    <td>Jaime</td>
+                    <td>Fin de semana</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Refuerzo escolar</td>
+                    <td>Diana</td>
+                    <td>Tarde</td>
+                </tr>
+              </tbody>
+          </table>
+    </section>
+    <script src="../Js/main.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+.buscar{
+    position: absolute;
+    padding: 5px;
+    margin: 25px;
+}
+
+.buscar input{
+    width: 350px;
+    height: 30px;
+    padding: 0 0 0 20px;
+    font-size: 14px;
+    outline: none;
+    border: 2px solid #fcb900;
+    border-radius: 30px;
+}
+
+.buscar_icon{
+    position: absolute;
+    top: 3px;
+    right: 0;
+    background: #8b0fff;
+    width: 35px;
+    height: 35px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 50%;
+    left: 320px;
+    cursor: pointer;
+}
+
+h3{
+    width: 1025px;
+    padding-bottom: 20px;
+    margin: 100px 0 20px 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.cont_info{
+    width: 1000px;
+	max-height: 1000px;
+	background-color: #fff;
+	position: relative;
+	box-shadow: 0 1px 7px rgba(0, 0, 0, .2);
+    cursor: pointer;
+	margin: 20px 65px 20px 35px;
+    padding: 15px 15px 10px 20px;
+}
+
+.info_title{
+    padding: 15px 0 15px 10px;
+    border-bottom: 1px solid #fcb900;
+    margin-bottom: 20px;
+}
+
+.info_form{
+    line-height: 70px;
+    font-size: 17px;
+    padding-left: 25px;
+    display: inline-block;
+}
+
+.info_form div{
+    float: left;
+    padding-right: 50px;
+    margin-bottom: 20px;
+}
+
+.info_form label{
+    padding-right: 30px;
+}
+
+.info_form input{
+    width: 400px;
+    padding: 2px 0 2px 20px;
+    border: none;
+    border-bottom: 2px solid #fcb900;
+    display: flex;
+    outline: 0;
+}
+
+.form-genero{
+    display: block;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 17px;
+    margin: 20px 0 20px 25px;
+}
+
+.generos,
+.form-genero p{
+    margin-bottom: 25px;
+}
+
+.generos input{
+    display: none;
+}
+
+.generos label{
+    display: flex;
+    gap: 15px;
+}
+
+.radio-button{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    position: relative;
+ }
+
+ .radio-button::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #8b0fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+input:checked + label .radio-button::after{
+    opacity: 1;
+}
+button{
+    background-color: #8b0fff;
+    font-size: 14px;
+    color:rgb(241, 236, 236);
+    border: 0;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(254, 1, 136, 0.132);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 15px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn{
+    display: flex;
+}
+
+.btn button{
+    justify-content: center;
+}
+
+.modal_actualizar,
+.modal_confir_a{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal_actualizar-show{
+    opacity: 1;
+    pointer-events: inherit;
+}
+
+.modal_container{
+    width: 70%;
+    max-width: 350px;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 6px;
+    padding: 20px;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+}
+
+.modal_tittle{
+    font-size: 24px;
+}
+
+.modal_paragraph{
+    margin-bottom: 10px;
+}
+
+.modal_img{
+    width: 55%;
+    max-width: 170px;
+}
+
+.content_modal_b{
+    float: left;
+    gap: 1em;
+}
+
+#modal_close_actu{
+    text-decoration: none;
+    color: #fff;
+    background-color: #8b0fff;
+    padding: 12px 20px;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+#modal_close_actu:hover{
+    color: #8b0fff;
+    background-color: #fff;
+}
+
+#cerrar{
+    display: none;
+}
+
+#cerrar + label{
+    position: relative;
+    font-size: 23px;
+    z-index: 50;
+    left: 145px;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #fcb900 ;
+}
+
+#cerrar + label:hover{
+    background-color: #fcb900;
+    color: white;
+}
