@@ -1,11 +1,4 @@
-//Se obtienen los datos del documento
-
-
-
-
 var  btn_regis = document.getElementById("btn_regis");
-
-
 
 function vali(e){
     e.preventDefault();
@@ -14,17 +7,12 @@ function vali(e){
     const  Regis = document.querySelector('#Regis');
     const btn_cerrar = document.querySelector('#btn-cerrar');
     const modal_confir_regi = document.querySelector('.modal_confir_regi');
-    var nombres = document.getElementById("pname").value;
-    var apellidos = document.getElementById("psurname").value;
-    var tipoDoc = document.getElementById("tdocument").value;
-    var identificacion  = document.getElementById("ndocument").value;
     var celular = document.getElementById("ncelular").value;
     var correo = document.getElementById("email").value;
-    var fecha_nacimiento = document.getElementById("date_nacimiento").value;
-    var actividad = document.getElementById("opcion_actividad").value;
-    console.log("Entreeee");
+    
+    
 
-    if(nombres.length===0|| apellidos.length===0 || tipoDoc.length===0 || identificacion.length===0 || celular.length===0 || correo.length===0 || fecha_nacimiento.length===0 || actividad.length===0 || !document.querySelector('input[name="optionsGenero"]:checked')){
+    if(celular.length===0 || correo.length===0){
         Swal.fire({
         icon: 'error',
         title: 'Oops...',
@@ -53,12 +41,3 @@ function vali(e){
 
 
 btn_regis.addEventListener('click', vali);
-
-    
-
-
-
-    
-
-
-

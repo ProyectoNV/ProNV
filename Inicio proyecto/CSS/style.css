@@ -75,7 +75,6 @@ input[type="password"]{
 /*Empieza el estilo de Registro*/
 
 #Registro{
-    background: #f1f1f1;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -90,7 +89,10 @@ input[type="password"]{
     max-width: 450px;
     min-width: 320px;
     margin: 30px auto;
-    border:1px solid black;
+    background:rgba(216, 90, 31, 0.212);
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    box-shadow: 3px 3px 18px whitesmoke;
 }
 .estudiante,.acudiente{
     display: block;
@@ -112,10 +114,6 @@ input[type="password"]{
 
 }
 
-.inputs input:hover{
-    border:1px solid #5c829f;
-    color:red;
-}
 .Tipo-Documento select, .genero select{
     margin-left: 30px;
     padding: 5px;
@@ -123,12 +121,12 @@ input[type="password"]{
     width: 70%;
 }
 
-.inputs button{
+button{
     margin-left: 20px;
     width: 90%;
     padding: 8px;
     border-radius: 10px;
-    background: lightgreen;
+    background: #b1d5ff;
     border: none;
     outline: none;
     cursor: pointer;
@@ -136,7 +134,25 @@ input[type="password"]{
 
 .inputs button:hover{
     border: darkgreen;
+}  
+
+.form_estado {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
 }
+
+.formulario_div-incorrecto .formulario_inputs{
+    border: 3px solid #bb2929;
+}
+
+.formulario_div-correcto .formulario_inputs{
+    border: 3px solid #1ed12d;
+}
+
 
 /*Empieza el css de recuperar contraseña*/
 
@@ -144,13 +160,16 @@ input[type="password"]{
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    background: #F5F2F1;
+    border-radius: 10px;
 }
 
 .caja-recuperar{
     margin: 220px auto;
     max-width: 450px;
-    border: 1px solid blue;
+    background:rgba(216, 90, 31, 0.212);
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    box-shadow: 3px 3px 18px whitesmoke;
 }
 
 .caja-recuperar legend{
@@ -162,18 +181,15 @@ input[type="password"]{
     display: block;
     margin: 0 auto;
     margin-top: 10px;
-    margin-bottom: 15px;
-    padding: 4px 0;
-    width: 80%;
-    height: 30px;
-    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: black;
+    background: white;
+    width: 96%;
+    height: 25px;
+    border-radius: 9px;
     border: none;
     outline: none;
-}
-
-.inputs-recuperar input::placeholder{
-    padding-left: 15px;
-    color:#C7C3C3;
 }
 
 .inputs-recuperar button{
@@ -181,12 +197,12 @@ input[type="password"]{
     margin:0 auto;
     margin-top: 20px;
     margin-bottom: 15px;
+    background: #b1d5ff;
+    border:#25B9BD;
     border-radius: 18px;
     font-size: 17px;
     width: 85%;
     padding: 2px;
+    cursor: pointer;
 }
 
-.inputs-recuperar button:hover{
-    border:#25B9BD;
-}

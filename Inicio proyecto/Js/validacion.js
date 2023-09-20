@@ -16,6 +16,14 @@ document.getElementById("login").addEventListener("submit", function(event) {
         
         window.location.href="../Inicio proyecto/Views/dashboard_docente.html";
     }else{
-        alert("Usuario no encontrado");
+        swal.fire
+        ({
+            title:'Lo sentimos',
+            icon:'error',
+            confirmButtonText:'Cerrar',
+            text:'El usuario no fue encontrado',
+            
+            
+        });
     }
 });

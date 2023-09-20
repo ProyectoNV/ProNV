@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-	<meta charset="UTF-8">
+	<!--Implementacion Sweet alert-->
+    <meta charset="UTF-8">
 </head>
 <body>
     <section  class="sidebar" id="sidebar">
@@ -103,13 +104,6 @@
             </ul>
         </nav> 
         <div>
-			<div class="info-text">
-			  <h1>Información del sistema</h1><br>
-              <p>Este es un sistema de información, orientado a la gestion de los datos que involucran a los usuarios y 
-                actividades dentro de la fundación Nueva vida para todos</p>
-			</div>
-		</div>
-        <div>
             <div class="info-text">
               <h1>Registrar Docente</h1>
             </div>
@@ -119,41 +113,38 @@
                     <div class="info_crono">
                         <div>
                             <label for="pname">Nombres</label>
-                            <input id="pname" type="text" id="nombres" name="p_nombre">
+                            <input id="pname" type="text" name="p_nombre">
                         </div>
                         <div>
                             <label for="psurname">Apellidos</label>
-                            <input id="psurname" type="text" id="apellidos" name="p_apellido">
+                            <input id="psurname" type="text" name="p_apellido">
                         </div>
                         <div>
                             <label for="tdocument">Tipo de documento</label>
-                            <input list="tdocument">
-                            <datalist id="tdocument">
-                                <option selected>T.I</option>
-                                <option>C.C</option>
-                                <option>R.C</option>
-                                <option>C.E</option>
-                            </datalist>
+                            <select id="tdocument">
+                                <option selected value="CC">C.C</option>
+                                <option value="CE">C.E</option>
+                            </select>
                         </div>
                         <div>
                             <label for="ndocument">Numero de documento</label>
-                            <input id="ndocument" type="text" id="numDoc" name="ndocument">
+                            <input id="ndocument" type="text" name="ndocument">
                         </div>
                         <div>
                             <label for="ncelular">Numero de celular</label>
-                            <input id="ncelular" type="text" id="celular" name="ncelular">
+                            <input id="ncelular" type="text" name="ncelular">
                         </div>
                         <div>
                             <label for="email">Correo Electronico</label>
-                            <input id="email" type="email" id="correo" name="email">
+                            <input id="email" type="email" name="email">
                         </div>
                         <div>
                             <label for="date_nacimiento">Fecha de nacimiento</label>
-                            <input id="date_nacimiento" type="date" id="nacimiento" name="date_nacimiento">
+                            <input id="date_nacimiento" type="date" name="date_nacimiento">
                         </div>
                         <div>
                             <p>Actividad correspondiente</p> 
-                            <select name="opcion_actividad">
+                            <select  id="opcion_actividad" name="opcion_actividad">
                                 <option value=""></option>
                                 <option value="Refuerzo_Escolar">Refuerzo Escolar</option>
                                 <option value="Robotica">Robotica</option>
@@ -206,5 +197,6 @@
     </section>
     <script src="../Js/main.js" charset="utf-8"></script>
     <script src="../Js/registrar.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

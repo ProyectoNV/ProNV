@@ -119,13 +119,13 @@
                     <label for="codigo_act">Codigó de la actividad:</label>
                     <input type="text" name="codigo_act" placeholder="Codigó de la actividad" id="codigo_act">
     
-                    <select name="Año">
+                    <select id="año_act" name="Año">
                         <option value="">Seleccione el año</option>
                         <option>2023</option>
                     </select>
                     <label for="Des_act">Descripción de la actividad:</label>
                     <textarea class="text-area" cols="30s" rows="8"></textarea><br>
-                    <div class="btn_crono"><button type="submit" id="btn_regis">Agregar actividad</button></div>
+                    <div class="btn_crono"><button type="button" id="btn_regis">Agregar actividad</button></div>
                 </form>
             </div>
                 
@@ -152,7 +152,8 @@
         <p class="modal_paragraph">Se ha agregado la nueva actividad</p>
     </div>
 </section>
+    <script src="../Js/Agregar_actividad.js" charset="utf-8"></script>
     <script src="../Js/main.js" charset="utf-8"></script>
-    <script src="../Js/registrar.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

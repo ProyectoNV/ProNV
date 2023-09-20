@@ -119,7 +119,7 @@
                     <div class="info_crono">
                         <div>
                             <p>La actividad correspondiente</p> 
-                            <select name="opcion_actividad">
+                            <select name="opcion_actividad" id="opcion_actividad">
                                 <option value=""></option>
                                 <option value="Refuerzo_Escolar">Refuerzo Escolar</option>
                                 <option value="Robotica">Robotica</option>
@@ -135,7 +135,7 @@
                         </div>
                         <div>
                             <p>Seleccione el dia de la semana</p>
-                            <select name="opcion_dia">
+                            <select name="opcion_dia" id="opcion_dia">
                                 <option value=""></option>
                                 <option value="lunes">Lunes</option>
                                 <option value="martes">Martes</option>
@@ -163,7 +163,7 @@
             </div>
         </div>
     </section>
-    <section class="modal_cronograma">
+    <section class="modal_cronograma" id="modal_cronograma">
         <div class="modal_container">
             <img src="../img/Date_Line.svg" class="modal_img">
             <h2 class="modal_tittle">¿Estas seguro de crear este horario?</h2>
@@ -174,7 +174,7 @@
             </div>
         </div>
     </section>
-    <section class="modal_confir_cro">
+    <section class="modal_confir_cro" id="modal_confir_cro">
         <div class="modal_container">
             <input type="checkbox" id="cerrar">
             <label for="cerrar" id="btn-cerrar">X</label>
@@ -185,5 +185,6 @@
     </section>
     <script src="../Js/main.js" charset="utf-8"></script>
     <script src="../Js/cronogram.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

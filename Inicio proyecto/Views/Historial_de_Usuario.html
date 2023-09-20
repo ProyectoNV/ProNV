@@ -104,13 +104,6 @@
         </nav> 
         <div>
 			<div class="info-text">
-			  <h1>Información del sistema</h1><br>
-              <p>Este es un sistema de información, orientado a la gestion de los datos que involucran a los usuarios y 
-                actividades dentro de la fundación Nueva vida para todos</p>
-			</div>
-		</div>
-        <div>
-			<div class="info-text">
 			  <h1>Historial de Usuario</h1>
 			</div>
 		</div>
@@ -138,13 +131,10 @@
                     </div>
                     <div>
                         <label for="tdocument">Tipo de documento</label>
-                        <input list="tdocument" value="T.I">
-                        <datalist id="tdocument">
-                            <option selected>T.I</option>
-                            <option>C.C</option>
-                            <option>R.C</option>
-                            <option>C.E</option>
-                        </datalist>
+                        <select id="tdocument">
+                            <option selected value="CC">C.C</option>
+                            <option value="CE">C.E</option>
+                        </select>
                     </div>
                     <div>
                         <label for="ndocument">Numero de documento</label>
@@ -190,16 +180,38 @@
                         <input id="psurname-a" type="text" name="p_apellido-a" value="Montaña">
                     </div>
                     <div>
-                        <label for="ncelular">Numero de celular</label>
-                        <input id="ncelular" type="text" name="ncelular" value="3153135796">
+                        <label for="tdocument-a">Tipo de documento</label>
+                        <select id="tdocument-a">
+                            <option selected value="CC">C.C</option>
+                            <option value="CE">C.E</option>
+                        </select>
                     </div>
                     <div>
-                        <label for="email">Correo Electronico</label>
-                        <input id="email" type="email" name="email" value="vlili08@gmail.com">
+                        <label for="ndocument-a">Numero de documento</label>
+                        <input id="ndocument-a" type="text" name="ndocument" value="1035692486">
                     </div>
                     <div>
-                        <label for="date_nacimiento">Fecha de nacimiento</label>
-                        <input id="date_nacimiento" type="date" name="date_nacimiento" value="2008-06-08">
+                        <label for="ncelular-a">Numero de celular</label>
+                        <input id="ncelular-a" type="text" name="ncelular" value="3153135796">
+                    </div>
+                    <div>
+                        <label for="email-a">Correo Electronico</label>
+                        <input id="email-a" type="email" name="email" value="vlili08@gmail.com">
+                    </div>
+                    <div>
+                        <label for="date_nacimiento-a">Fecha de nacimiento</label>
+                        <input id="date_nacimiento-a" type="date" name="date_nacimiento" value="2008-06-08">
+                    </div>
+                </div>
+                <div class="form-genero">
+                    <p>Genero</p>
+                    <div class="generos">
+                        <input type="radio" name="optionsGenero-a" id="optionsRadios1-a">
+                        <label for="optionsRadios1-a"><span class="radio-button"></span>Masculino</label>
+                    </div>
+                    <div class="generos">
+                        <input type="radio" name="optionsGenero-a" id="optionsRadios2-a" checked="">
+                        <label for="optionsRadios2-a"><span class="radio-button"></span>Femenino</label>
                     </div>
                 </div>
                 <div class="btn_actu"><button type="submit" id="btn_actu-d">Actualizar</button></div>
@@ -228,5 +240,6 @@
     </section>
     <script src="../Js/main.js" charset="utf-8"></script>
     <script src="../Js/actualizar.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

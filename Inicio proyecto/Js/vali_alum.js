@@ -1,8 +1,3 @@
-//Se obtienen los datos del documento
-
-
-
-
 var  btn_regis = document.getElementById("btn_regis");
 
 
@@ -21,10 +16,16 @@ function vali(e){
     var celular = document.getElementById("ncelular").value;
     var correo = document.getElementById("email").value;
     var fecha_nacimiento = document.getElementById("date_nacimiento").value;
-    var actividad = document.getElementById("opcion_actividad").value;
-    console.log("Entreeee");
+    var nombres_a = document.getElementById("pname-a").value;
+    var apellidos_a = document.getElementById("psurname-a").value;
+    var tipoDoc_a = document.getElementById("tdocument-a").value;
+    var identificacion_a  = document.getElementById("ndocument-a").value;
+    var celular_a = document.getElementById("ncelular-a").value;
+    var correo_a = document.getElementById("email-a").value;
+    var fecha_nacimiento_a = document.getElementById("date_nacimiento-a").value;
 
-    if(nombres.length===0|| apellidos.length===0 || tipoDoc.length===0 || identificacion.length===0 || celular.length===0 || correo.length===0 || fecha_nacimiento.length===0 || actividad.length===0 || !document.querySelector('input[name="optionsGenero"]:checked')){
+    if(nombres.length===0|| apellidos.length===0 || tipoDoc.length===0 || identificacion.length===0 || celular.length===0 || correo.length===0 || fecha_nacimiento.length===0 || !document.querySelector('input[name="optionsGenero"]:checked') ||
+    nombres_a.length===0|| apellidos_a.length===0 || tipoDoc_a.length===0 || identificacion_a.length===0 || celular_a.length===0 || correo_a.length===0 || fecha_nacimiento_a.length===0 || !document.querySelector('input[name="optionsGenero-a"]:checked')){
         Swal.fire({
         icon: 'error',
         title: 'Oops...',
@@ -53,12 +54,3 @@ function vali(e){
 
 
 btn_regis.addEventListener('click', vali);
-
-    
-
-
-
-    
-
-
-
